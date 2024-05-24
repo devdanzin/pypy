@@ -157,6 +157,8 @@ static const long SSL3_RT_INNER_CONTENT_TYPE;
 
 static const long SSL3_MT_CHANGE_CIPHER_SPEC;
 
+static const long Cryptography_HAS_SSL_OP_NO_RENEGOTIATION;
+
 typedef ... SSL_METHOD;
 typedef ... SSL_CTX;
 

@@ -157,8 +157,6 @@ static const long SSL3_RT_INNER_CONTENT_TYPE;
 
 static const long SSL3_MT_CHANGE_CIPHER_SPEC;
 
-static const long Cryptography_HAS_SSL_OP_NO_RENEGOTIATION;
-
 typedef ... SSL_METHOD;
 typedef ... SSL_CTX;
 
@@ -929,10 +927,4 @@ static const long Cryptography_HAS_X509_V_FLAG_PARTIAL_CHAIN = 1;
 #else
 static const long Cryptography_HAS_X509_V_FLAG_PARTIAL_CHAIN = 0;
 #endif
-#ifdef SSL_OP_NO_RENEGOTIATION
-static const long Cryptography_HAS_SSL_OP_NO_RENEGOTIATION = 1;
-#else
-static const long Cryptography_HAS_SSL_OP_NO_RENEGOTIATION = 0;
-#endif
-
 """

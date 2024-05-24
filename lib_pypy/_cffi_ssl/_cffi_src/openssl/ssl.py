@@ -921,4 +921,16 @@ static const long Cryptography_HAS_X509_CHECK_FLAG_NEVER_CHECK_SUBJECT = 1;
 #else
 static const long Cryptography_HAS_X509_CHECK_FLAG_NEVER_CHECK_SUBJECT = 0;
 #endif
+
+#ifdef X509_V_FLAG_PARTIAL_CHAIN
+static const long Cryptography_HAS_X509_V_FLAG_PARTIAL_CHAIN = 1;
+#else
+static const long Cryptography_HAS_X509_V_FLAG_PARTIAL_CHAIN = 0;
+#endif
+#ifdef SSL_OP_NO_RENEGOTIATION
+static const long Cryptography_HAS_SSL_OP_NO_RENEGOTIATION = 1;
+#else
+static const long Cryptography_HAS_SSL_OP_NO_RENEGOTIATION = 0;
+#endif
+
 """
